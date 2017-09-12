@@ -1,0 +1,94 @@
+/*!
+ * Bootstrap v4.0.0-beta Compatibility layer from Bootstrap 3.3.7 extended
+ * By: Marcos Castro
+ */
+
+@import "configuration";
+
+@import "mixins/mixins";
+
+@import "layer/grid";
+
+@import "layer/panel";
+
+@if $enable-container-as-row {
+	@include extend_class('.container','.row');
+	@include extend_class('.container-fluid','.row');
+}
+
+@include extend_class('.well','.card, .card-body, .bg-light');
+
+@include extend_class('.thumbnail','.card, .card-body');
+@include extend_class('.list-inline > li','.list-inline-item');
+
+@if $enable-compatibility-dropdown {
+	@include extend_class('.dropdown-menu > li > a','.dropdown-item');
+	@include extend_class('.open','.show');
+
+}
+
+@if $enable-compatibility-nav {
+	@include extend_class('.navbar','.navbar-expand-lg');
+	@include extend_class('.navbar-nav > li','.nav-item');
+	@include extend_class('.navbar-nav > li > a','.nav-link');
+	@include extend_class('.navbar-right','.ml-auto');
+	@include extend_class('.navbar-btn','.nav-item');
+	@include extend_class('.navbar-fixed-top','.fixed-top');
+	@include extend_class('.navbar-fixed-bottom','.fixed-bottom');
+	@include extend_class('.nav-stacked','.flex-column');
+	@include extend_class('.navbar','.bg-light');
+	@include extend_class('.navbar-header','.d-block');
+
+	@include extend_class('.navbar-toggle','.navbar-toggler, .pull-right');
+	@include extend_class('.navbar-toggle:after','.navbar-toggler-icon');
+
+	@include extend_class('.navbar-default','.navbar-light, .bg-light');
+	@include extend_class('.navbar-inverse','.navbar-dark, .bg-dark');
+}
+
+@if $enable-compatibility-btn {
+	@include extend_class('.btn-default','.btn-secondary');
+}
+
+@if $enable-compatibility-img {
+	@include extend_class('.img-responsive','.img-fluid');
+	@include extend_class('.img-circle','.rounded-circle');
+	@include extend_class('.img-rounded','.rounded');
+}
+
+@include extend_class('.form-horizontal','.d-block'); // looking better one
+@include extend_class('.radio','.form-check');
+@include extend_class('.checkbox','.form-check');
+@include extend_class('.input-lg','.form-control-lg');
+@include extend_class('.input-sm','.form-control-sm');
+@include extend_class('.control-label','.form-control-label');
+
+@include extend_class('.table-condensed','.table-sm');
+@include extend_class('.pagination > li','.page-item');
+@include extend_class('.pagination > li > a','.page-link');
+@include extend_class('.item','.carousel-item');
+@include extend_class('.text-help','.form-control-feedback');
+@include extend_class('.pull-right','.float-right');
+@include extend_class('.pull-left','.float-left');
+@include extend_class('.center-block','.mx-auto');
+
+@include extend_class('.hidden-xs','.d-none');
+@include extend_class('.hidden-sm','.d-sm-none');
+@include extend_class('.hidden-md','.d-md-none');
+@include extend_class('.visible-xs','.d-block, .d-sm-none');
+@include extend_class('.visible-sm','.d-block, .d-md-none');
+@include extend_class('.visible-md','.d-block, .d-lg-none');
+@include extend_class('.visible-lg','.d-block, .d-xl-none');
+
+@include extend_class('.label','.badge');
+@include extend_class('.badge','.badge, .badge-pill');
+
+.open {
+	&, & > .dropdown-menu {
+		@extend .show;
+	}
+}
+
+// Spacings
+
+@include extend_class('.progress, .panel, .well','.mb-2');

@@ -1,0 +1,12 @@
+@if $enable-compatibility-panel {
+	@include extend_class('.panel','.card');
+	@include extend_class('.panel-heading','.card-header');
+	@include extend_class('.panel-title','.card-title');
+	@include extend_class('.panel-body','.card-body');
+	@include extend_class('.panel-footer','.card-footer');
+	@include extend_class('.panel-primary','.card, .bg-primary, .text-white');
+	@include extend_class('.panel-success','.card, .bg-success, .text-white');
+	@include extend_class('.panel-info','.card, .text-white, .bg-info');
+	@include extend_class('.panel-warning','.card, .bg-warning');
+	@include extend_class('.panel-danger','.card, .bg-danger, .text-white');
+}
