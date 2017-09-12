@@ -24,7 +24,6 @@
 @if $enable-compatibility-dropdown {
 	@include extend_class('.dropdown-menu > li > a','.dropdown-item');
 	@include extend_class('.open','.show');
-
 }
 
 @if $enable-compatibility-nav {
@@ -82,12 +81,6 @@
 
 @include extend_class('.label','.badge');
 @include extend_class('.badge','.badge, .badge-pill');
-
-.open {
-	&, & > .dropdown-menu {
-		@extend .show;
-	}
-}
 
 // Spacings
 
