@@ -11,7 +11,7 @@ Several quick start options are available:
 - Clone the repo: `git clone https://github.com/marcoscv-work/BS3-to-BS4-compatibility-layer`
 - `npm i`
 - `gulp watch`
-- open `index.html
+- open `index.html`
 - Change something and refresh
 
 ## What's included
