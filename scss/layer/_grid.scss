@@ -1,36 +1,36 @@
 
 @if $enable-compatibility-grid {
-	@include extend_class('.col-xs-1','.col-1');
-	@include extend_class('.col-xs-2','.col-2');
-	@include extend_class('.col-xs-3','.col-3');
-	@include extend_class('.col-xs-4','.col-4');
-	@include extend_class('.col-xs-5','.col-5');
-	@include extend_class('.col-xs-6','.col-6');
-	@include extend_class('.col-xs-7','.col-7');
-	@include extend_class('.col-xs-8','.col-8');
-	@include extend_class('.col-xs-9','.col-9');
-	@include extend_class('.col-xs-10','.col-10');
-	@include extend_class('.col-xs-11','.col-11');
-	@include extend_class('.col-xs-12','.col-12');
+	@include extend-class('.col-xs-1','.col-1');
+	@include extend-class('.col-xs-2','.col-2');
+	@include extend-class('.col-xs-3','.col-3');
+	@include extend-class('.col-xs-4','.col-4');
+	@include extend-class('.col-xs-5','.col-5');
+	@include extend-class('.col-xs-6','.col-6');
+	@include extend-class('.col-xs-7','.col-7');
+	@include extend-class('.col-xs-8','.col-8');
+	@include extend-class('.col-xs-9','.col-9');
+	@include extend-class('.col-xs-10','.col-10');
+	@include extend-class('.col-xs-11','.col-11');
+	@include extend-class('.col-xs-12','.col-12');
 
-	@include extend_class('col-1-offset','.mx-auto');
-	@include extend_class('col-2-offset','.mx-auto');
-	@include extend_class('col-3-offset','.mx-auto');
-	@include extend_class('col-4-offset','.mx-auto');
-	@include extend_class('col-5-offset','.mx-auto');
-	@include extend_class('col-6-offset','.mx-auto');
-	@include extend_class('col-7-offset','.mx-auto');
-	@include extend_class('col-8-offset','.mx-auto');
-	@include extend_class('col-9-offset','.mx-auto');
-	@include extend_class('col-10-offset','.mx-auto');
-	@include extend_class('col-11-offset','.mx-auto');
-	@include extend_class('col-12-offset','.mx-auto');
+	@include extend-class('col-1-offset','.mx-auto');
+	@include extend-class('col-2-offset','.mx-auto');
+	@include extend-class('col-3-offset','.mx-auto');
+	@include extend-class('col-4-offset','.mx-auto');
+	@include extend-class('col-5-offset','.mx-auto');
+	@include extend-class('col-6-offset','.mx-auto');
+	@include extend-class('col-7-offset','.mx-auto');
+	@include extend-class('col-8-offset','.mx-auto');
+	@include extend-class('col-9-offset','.mx-auto');
+	@include extend-class('col-10-offset','.mx-auto');
+	@include extend-class('col-11-offset','.mx-auto');
+	@include extend-class('col-12-offset','.mx-auto');
 
-	@include extend_class('col-1-push','.order-1');
-	@include extend_class('col-2-push','.order-2');
+	@include extend-class('col-1-push','.order-1');
+	@include extend-class('col-2-push','.order-2');
 
-	@include extend_class('col-1-pull','.order-1');
-	@include extend_class('col-2-pull','.order-2');
+	@include extend-class('col-1-pull','.order-1');
+	@include extend-class('col-2-pull','.order-2');
 } @else {
 	@if $enable-warnings {
 		@warn "compatibility-grid is disabled";
