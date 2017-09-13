@@ -60,6 +60,12 @@
 	@include extend-class('.img-rounded','.rounded');
 }
 
+@if $enable-compatibility-pager {
+	@include extend-class('.pager','.list-unstyled, .text-center');
+	@include extend-class('.pager > li > a','.btn, .btn-outline-secondary');
+	@include extend-class('.pager > li','.d-inline-block');
+}
+
 @include extend-class('.breadcrumb li','.breadcrumb-item');
 
 @include extend-class('.form-horizontal','.d-block'); // looking better one
