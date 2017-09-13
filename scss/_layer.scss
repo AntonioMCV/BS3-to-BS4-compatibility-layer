@@ -16,7 +16,11 @@
 	@include extend-class('.container-fluid','.row');
 }
 
-@include extend-class('.well','.card, .card-body, .bg-light');
+@if $enable-compatibility-well {
+	@include extend-class('.well','.card, .card-body, .bg-light');
+	@include extend-class('.well-lg','.p-3');
+	@include extend-class('.well-sm','.p-1');
+}
 
 @include extend-class('.thumbnail','.card, .card-body');
 @include extend-class('.list-inline > li','.list-inline-item');
