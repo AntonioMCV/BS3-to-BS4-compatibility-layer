@@ -23,6 +23,7 @@
 }
 
 @include extend-class('.thumbnail','.card, .card-body');
+
 @include extend-class('.list-inline > li','.list-inline-item');
 
 @if $enable-compatibility-dropdown {
