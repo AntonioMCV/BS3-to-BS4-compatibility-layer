@@ -75,8 +75,15 @@
 @include extend-class('.visible-md','.d-block, .d-lg-none');
 @include extend-class('.visible-lg','.d-block, .d-xl-none');
 
-@include extend-class('.label','.badge');
-@include extend-class('.badge','.badge, .badge-pill');
+@include extend-class('.label','.badge, .badge-secondary');
+@include extend-class('.label-primary','.badge-primary');
+@include extend-class('.label-success','.badge-success');
+@include extend-class('.label-info','.badge-info');
+@include extend-class('.label-warning','.badge-warning');
+@include extend-class('.label-danger','.badge-danger');
+
+@include extend-class('.badge','.badge, .badge-pill, .badge-secondary');
+
 // General and temporal disabled
 
 .disabled {
