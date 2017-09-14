@@ -75,6 +75,11 @@
 
 @include extend-class('.label','.badge');
 @include extend-class('.badge','.badge, .badge-pill');
+// General and temporal disabled
+
+.disabled {
+	opacity: 0.6;
+}
 
 // Spacings
 
