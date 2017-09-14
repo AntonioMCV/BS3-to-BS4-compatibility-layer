@@ -28,12 +28,15 @@
 @include extend-class('.list-inline > li','.list-inline-item');
 
 @if $enable-compatibility-dropdown {
+	@include extend-class('.dropdown-menu > .divider','.dropdown-divider');
 	@include extend-class('.dropdown-menu > li > a','.dropdown-item');
 	@include extend-class('.open','.show');
 }
 
 @if $enable-compatibility-btn {
 	@include extend-class('.btn-default','.btn-secondary');
+	@include extend-class('.btn-group-justified','.d-flex');
+	@include extend-class('.btn-group-justified .btn, .btn-group-justified .btn-group','.w-100');
 }
 
 @if $enable-compatibility-img {
