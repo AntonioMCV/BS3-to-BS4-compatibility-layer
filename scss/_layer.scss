@@ -23,10 +23,6 @@
 	@include extend-class('.well-sm','.p-1');
 }
 
-@include extend-class('.thumbnail','.card, .card-body');
-
-@include extend-class('.list-inline > li','.list-inline-item');
-
 @if $enable-compatibility-dropdown {
 	@include extend-class('.dropdown-menu > .divider','.dropdown-divider');
 	@include extend-class('.dropdown-menu > li > a','.dropdown-item');
@@ -53,44 +49,59 @@
 	@include extend-class('.pager .next','.pull-right');
 }
 
-@include extend-class('.breadcrumb li','.breadcrumb-item');
+@if $enable-compatibility-breadcrumb {
+	@include extend-class('.breadcrumb li','.breadcrumb-item');
+}
 
-@include extend-class('.form-horizontal','.d-block'); // looking better one
-@include extend-class('.radio','.form-check');
-@include extend-class('.checkbox','.form-check');
-@include extend-class('.input-lg','.form-control-lg');
-@include extend-class('.input-sm','.form-control-sm');
-@include extend-class('.control-label','.form-control-label');
+@if $enable-compatibility-form {
+	@include extend-class('.form-horizontal','.form-inline'); // looking better one
+	@include extend-class('.radio','.form-check');
+	@include extend-class('.checkbox','.form-check');
+	@include extend-class('.input-lg','.form-control-lg');
+	@include extend-class('.input-sm','.form-control-sm');
+	@include extend-class('.control-label','.form-control-label');
+}
 
-@include extend-class('.table-condensed','.table-sm');
+@if $enable-compatibility-table {
+	@include extend-class('.table-condensed','.table-sm');
+}
 
-@include extend-class('.item','.carousel-item');
-@include extend-class('.text-help','.form-control-feedback');
-@include extend-class('.pull-right','.float-right');
-@include extend-class('.pull-left','.float-left');
-@include extend-class('.center-block','.mx-auto');
+@if $enable-compatibility-bs3-utilities {
+	@include extend-class('.item','.carousel-item');
+	@include extend-class('.list-inline > li','.list-inline-item');
+	@include extend-class('.thumbnail','.card, .card-body');
+	@include extend-class('.text-help','.form-control-feedback');
+	@include extend-class('.pull-right','.float-right');
+	@include extend-class('.pull-left','.float-left');
+	@include extend-class('.center-block','.mx-auto');
+	@include extend-class('.hidden-xs','.d-none');
+	@include extend-class('.hidden-sm','.d-sm-none');
+	@include extend-class('.hidden-md','.d-md-none');
+	@include extend-class('.visible-xs','.d-block, .d-sm-none');
+	@include extend-class('.visible-sm','.d-block, .d-md-none');
+	@include extend-class('.visible-md','.d-block, .d-lg-none');
+	@include extend-class('.visible-lg','.d-block, .d-xl-none');
+}
 
-@include extend-class('.hidden-xs','.d-none');
-@include extend-class('.hidden-sm','.d-sm-none');
-@include extend-class('.hidden-md','.d-md-none');
-@include extend-class('.visible-xs','.d-block, .d-sm-none');
-@include extend-class('.visible-sm','.d-block, .d-md-none');
-@include extend-class('.visible-md','.d-block, .d-lg-none');
-@include extend-class('.visible-lg','.d-block, .d-xl-none');
+@if $enable-compatibility-label {
+	@include extend-class('.label','.badge, .badge-secondary');
+	@include extend-class('.label-primary','.badge-primary');
+	@include extend-class('.label-success','.badge-success');
+	@include extend-class('.label-info','.badge-info');
+	@include extend-class('.label-warning','.badge-warning');
+	@include extend-class('.label-danger','.badge-danger');
+}
 
-@include extend-class('.label','.badge, .badge-secondary');
-@include extend-class('.label-primary','.badge-primary');
-@include extend-class('.label-success','.badge-success');
-@include extend-class('.label-info','.badge-info');
-@include extend-class('.label-warning','.badge-warning');
-@include extend-class('.label-danger','.badge-danger');
+@if $enable-compatibility-badge {
+	@include extend-class('.badge','.badge, .badge-pill, .badge-secondary');
+}
 
-@include extend-class('.badge','.badge, .badge-pill, .badge-secondary');
-
-// General and temporal disabled
+// General and temporal .disabled
 
 .disabled {
 	opacity: 0.6;
+
+	@include box-shadow(none);
 }
 
 // Spacings
