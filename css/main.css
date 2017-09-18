@@ -1307,60 +1307,60 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 .was-validated .custom-file-input:invalid:focus, .custom-file-input.is-invalid:focus {
   box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25); }
 
-.form-inline, .navbar .navbar-form {
+.form-inline, .navbar .navbar-form, .form-horizontal {
   display: flex;
   flex-flow: row wrap;
   align-items: center; }
-  .form-inline .form-check, .navbar .navbar-form .form-check, .form-inline .radio, .navbar .navbar-form .radio, .form-inline .checkbox, .navbar .navbar-form .checkbox {
+  .form-inline .form-check, .navbar .navbar-form .form-check, .form-horizontal .form-check, .form-inline .radio, .navbar .navbar-form .radio, .form-horizontal .radio, .form-inline .checkbox, .navbar .navbar-form .checkbox, .form-horizontal .checkbox {
     width: 100%; }
   @media (min-width: 576px) {
-    .form-inline label, .navbar .navbar-form label {
+    .form-inline label, .navbar .navbar-form label, .form-horizontal label {
       display: flex;
       align-items: center;
       justify-content: center;
       margin-bottom: 0; }
-    .form-inline .form-group, .navbar .navbar-form .form-group {
+    .form-inline .form-group, .navbar .navbar-form .form-group, .form-horizontal .form-group {
       display: flex;
       flex: 0 0 auto;
       flex-flow: row wrap;
       align-items: center;
       margin-bottom: 0; }
-    .form-inline .form-control, .navbar .navbar-form .form-control {
+    .form-inline .form-control, .navbar .navbar-form .form-control, .form-horizontal .form-control {
       display: inline-block;
       width: auto;
       vertical-align: middle; }
-    .form-inline .form-control-plaintext, .navbar .navbar-form .form-control-plaintext {
+    .form-inline .form-control-plaintext, .navbar .navbar-form .form-control-plaintext, .form-horizontal .form-control-plaintext {
       display: inline-block; }
-    .form-inline .input-group, .navbar .navbar-form .input-group {
+    .form-inline .input-group, .navbar .navbar-form .input-group, .form-horizontal .input-group {
       width: auto; }
-    .form-inline .form-control-label, .navbar .navbar-form .form-control-label, .form-inline .control-label, .navbar .navbar-form .control-label {
+    .form-inline .form-control-label, .navbar .navbar-form .form-control-label, .form-horizontal .form-control-label, .form-inline .control-label, .navbar .navbar-form .control-label, .form-horizontal .control-label {
       margin-bottom: 0;
       vertical-align: middle; }
-    .form-inline .form-check, .navbar .navbar-form .form-check, .form-inline .radio, .navbar .navbar-form .radio, .form-inline .checkbox, .navbar .navbar-form .checkbox {
+    .form-inline .form-check, .navbar .navbar-form .form-check, .form-horizontal .form-check, .form-inline .radio, .navbar .navbar-form .radio, .form-horizontal .radio, .form-inline .checkbox, .navbar .navbar-form .checkbox, .form-horizontal .checkbox {
       display: flex;
       align-items: center;
       justify-content: center;
       width: auto;
       margin-top: 0;
       margin-bottom: 0; }
-    .form-inline .form-check-label, .navbar .navbar-form .form-check-label {
+    .form-inline .form-check-label, .navbar .navbar-form .form-check-label, .form-horizontal .form-check-label {
       padding-left: 0; }
-    .form-inline .form-check-input, .navbar .navbar-form .form-check-input {
+    .form-inline .form-check-input, .navbar .navbar-form .form-check-input, .form-horizontal .form-check-input {
       position: relative;
       margin-top: 0;
       margin-right: 0.25rem;
       margin-left: 0; }
-    .form-inline .custom-control, .navbar .navbar-form .custom-control {
+    .form-inline .custom-control, .navbar .navbar-form .custom-control, .form-horizontal .custom-control {
       display: flex;
       align-items: center;
       justify-content: center;
       padding-left: 0; }
-    .form-inline .custom-control-indicator, .navbar .navbar-form .custom-control-indicator {
+    .form-inline .custom-control-indicator, .navbar .navbar-form .custom-control-indicator, .form-horizontal .custom-control-indicator {
       position: static;
       display: inline-block;
       margin-right: 0.25rem;
       vertical-align: text-bottom; }
-    .form-inline .has-feedback .form-control-feedback, .navbar .navbar-form .has-feedback .form-control-feedback, .form-inline .has-feedback .text-help, .navbar .navbar-form .has-feedback .text-help {
+    .form-inline .has-feedback .form-control-feedback, .navbar .navbar-form .has-feedback .form-control-feedback, .form-horizontal .has-feedback .form-control-feedback, .form-inline .has-feedback .text-help, .navbar .navbar-form .has-feedback .text-help, .form-horizontal .has-feedback .text-help {
       top: 0; } }
 
 .btn, .pager > li > a {
@@ -3913,7 +3913,7 @@ a.bg-dark:focus, a.navbar-inverse:focus, a.bg-dark:hover, a.navbar-inverse:hover
 .d-inline-block, .pager > li {
   display: inline-block !important; }
 
-.d-block, .navbar-header, .form-horizontal, .visible-xs, .visible-sm, .visible-md, .visible-lg {
+.d-block, .navbar-header, .visible-xs, .visible-sm, .visible-md, .visible-lg {
   display: block !important; }
 
 .d-table {
@@ -4746,18 +4746,6 @@ a.bg-dark:focus, a.navbar-inverse:focus, a.bg-dark:hover, a.navbar-inverse:hover
 
 .mr-auto,
 .mx-auto,
-col-1-offset,
-col-2-offset,
-col-3-offset,
-col-4-offset,
-col-5-offset,
-col-6-offset,
-col-7-offset,
-col-8-offset,
-col-9-offset,
-col-10-offset,
-col-11-offset,
-col-12-offset,
 .center-block {
   margin-right: auto !important; }
 
@@ -4767,18 +4755,6 @@ col-12-offset,
 
 .ml-auto, .navbar-right,
 .mx-auto,
-col-1-offset,
-col-2-offset,
-col-3-offset,
-col-4-offset,
-col-5-offset,
-col-6-offset,
-col-7-offset,
-col-8-offset,
-col-9-offset,
-col-10-offset,
-col-11-offset,
-col-12-offset,
 .center-block {
   margin-left: auto !important; }
 
@@ -4962,7 +4938,7 @@ col-12-offset,
   .mb-sm-auto,
   .my-sm-auto {
     margin-bottom: auto !important; }
-  .ml-sm-auto,
+  .ml-sm-auto, .col-sm-1-offset, .col-sm-2-offset, .col-sm-3-offset, .col-sm-4-offset, .col-sm-5-offset, .col-sm-6-offset, .col-sm-7-offset, .col-sm-8-offset, .col-sm-9-offset, .col-sm-10-offset, .col-sm-11-offset, .col-sm-12-offset,
   .mx-sm-auto {
     margin-left: auto !important; } }
 
@@ -5146,7 +5122,7 @@ col-12-offset,
   .mb-md-auto,
   .my-md-auto {
     margin-bottom: auto !important; }
-  .ml-md-auto,
+  .ml-md-auto, .col-md-1-offset, .col-md-2-offset, .col-md-3-offset, .col-md-4-offset, .col-md-5-offset, .col-md-6-offset, .col-md-7-offset, .col-md-8-offset, .col-md-9-offset, .col-md-10-offset, .col-md-11-offset, .col-md-12-offset,
   .mx-md-auto {
     margin-left: auto !important; } }
 
@@ -5330,7 +5306,7 @@ col-12-offset,
   .mb-lg-auto,
   .my-lg-auto {
     margin-bottom: auto !important; }
-  .ml-lg-auto,
+  .ml-lg-auto, .col-lg-1-offset, .col-lg-2-offset, .col-lg-3-offset, .col-lg-4-offset, .col-lg-5-offset, .col-lg-6-offset, .col-lg-7-offset, .col-lg-8-offset, .col-lg-9-offset, .col-lg-10-offset, .col-lg-11-offset, .col-lg-12-offset,
   .mx-lg-auto {
     margin-left: auto !important; } }
 
