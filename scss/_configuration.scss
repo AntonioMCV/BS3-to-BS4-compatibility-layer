@@ -1,5 +1,9 @@
+// Warnings and debugging
+
 $enable-debugging:						false !default;
 $enable-warnings:						true !default;
+
+// Components
 
 $enable-compatibility-badge:			true !default;
 $enable-compatibility-table:			true !default;
@@ -18,4 +22,10 @@ $enable-compatibility-pagination: 		true !default;
 $enable-compatibility-panel:			true !default;
 $enable-compatibility-well:				true !default;
 
+// If you need containers work as a row
+
 $enable-container-as-row:				false !default;
+
+// Components with deprecated spacing
+
+$default-deprecated-spacing:			'.mb-3' !default;
