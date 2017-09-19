@@ -5640,8 +5640,8 @@ a.text-dark:focus, a.text-dark:hover {
  */
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url("glyphicons/glyphicons-halflings-regular.eot");
-  src: url("glyphicons/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("glyphicons/glyphicons-halflings-regular.woff2") format("woff2"), url("glyphicons/glyphicons-halflings-regular.woff") format("woff"), url("glyphicons/glyphicons-halflings-regular.ttf") format("truetype"), url("glyphicons/glyphicons-halflings-regular.svgglyphicons_halflingsregular") format("svg"); }
+  src: url("../css/glyphicons/glyphicons-halflings-regular.eot");
+  src: url("../css/glyphicons/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../css/glyphicons/glyphicons-halflings-regular.woff2") format("woff2"), url("../css/glyphicons/glyphicons-halflings-regular.woff") format("woff"), url("../css/glyphicons/glyphicons-halflings-regular.ttf") format("truetype"), url("../css/glyphicons/glyphicons-halflings-regular.svgglyphicons_halflingsregular") format("svg"); }
 
 .glyphicon {
   position: relative;
