@@ -22,6 +22,12 @@ $enable-compatibility-pagination: 		true !default;
 $enable-compatibility-panel:			true !default;
 $enable-compatibility-well:				true !default;
 
+$enable-compatibility-glyphicons-icons:	true !default;
+
+$icon-font-path:          "glyphicons/" !default;
+$icon-font-name:          "glyphicons-halflings-regular" !default;
+$icon-font-svg-id:        "glyphicons_halflingsregular" !default;
+
 // If you need containers work as a row
 
 $enable-container-as-row:				false !default;
